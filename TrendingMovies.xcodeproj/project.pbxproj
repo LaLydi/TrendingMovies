@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00945C16293E7DAB00AA1836 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00945C15293E7DAB00AA1836 /* Observable.swift */; };
 		00E4EF8A293AB37D000755AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EF89293AB37D000755AC /* AppDelegate.swift */; };
 		00E4EF93293AB381000755AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E4EF92293AB381000755AC /* Assets.xcassets */; };
 		00E4EF96293AB381000755AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E4EF94293AB381000755AC /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00945C15293E7DAB00AA1836 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		00E4EF86293AB37D000755AC /* TrendingMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E4EF89293AB37D000755AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00E4EF92293AB381000755AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		00E4EFAA293AB658000755AC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				00945C15293E7DAB00AA1836 /* Observable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00945C16293E7DAB00AA1836 /* Observable.swift in Sources */,
 				00E4EFB7293AC808000755AC /* MovieModel.swift in Sources */,
 				00E4EF8A293AB37D000755AC /* AppDelegate.swift in Sources */,
 				00E4EFB5293AC7A8000755AC /* APICaller.swift in Sources */,
