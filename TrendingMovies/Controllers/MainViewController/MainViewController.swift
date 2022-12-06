@@ -34,9 +34,7 @@ class MainViewController: UIViewController {
     
     func bindViewModel() {
         viewModel.isLoading.bind { [weak self] isLoading in
-            guard let self = self, let isLoading = isLoading else {
-                return
-            }
+            guard let self = self, let isLoading = isLoading else { return }
             
             DispatchQueue.main.async {
                 if isLoading {
@@ -48,12 +46,20 @@ class MainViewController: UIViewController {
         }
         
         viewModel.cellDataSource.bind { [weak self] movies in
-            guard let self = self, let movies = movies else {
-                return
-            }
+            guard let self = self, let movies = movies else { return }
             
             self.cellDataSource = movies
             self.reloadTableView()
+        }
+    }
+    
+    func openDetails(_ movieId: Int) {
+        guard let movie = viewModel.getMovie(with: movieId) else { return }
+        
+        let detailsViewModel = MovieDetailsViewModel(movie: movie)
+        let detailsController = MovieDetailsViewController(viewModel: detailsViewModel)
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailsController, animated: true)
         }
     }
 
